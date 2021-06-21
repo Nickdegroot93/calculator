@@ -92,9 +92,11 @@ function appendPoint() {
 }
 
 function appendNumber(number) {
-	if (screen.textContent == 0 && !screen.textContent.includes('.'))
+	if (
+		(screen.textContent == 0 && !screen.textContent.includes('.')) ||
+		screen.style.fontSize == '2.5rem'
+	)
 		resetScreen();
-	if (screen.style.fontSize == '2.5rem') resetScreen();
 
 	screen.textContent += number;
 }

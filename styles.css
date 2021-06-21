@@ -164,7 +164,7 @@ h2 {
 .calculator {
 	word-wrap: break-word;
 	word-break: break-all;
-	margin: 10rem auto 1rem auto;
+	margin: 2rem auto 1rem auto;
 	min-height: 500px;
 	max-width: 300px;
 	display: grid;
