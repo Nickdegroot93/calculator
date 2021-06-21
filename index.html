@@ -1,52 +1,48 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts.js" defer></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="screen" data-screen>0</div>
+			<div class="mid-operator" data-temp></div>
+			<div class="buttons-grid">
+				<button class="btn btn-clear" data-clear>CLEAR</button>
+				<button class="btn btn-delete" data-delete>DELETE</button>
 
-  <title>Calculator</title>
-  <meta name="description" content="Calculator">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="styles.css">
+				<button class="btn" data-number>7</button>
+				<button class="btn" data-number>8</button>
+				<button class="btn" data-number>9</button>
+				<button class="btn" data-operator>÷</button>
 
-</head>
+				<button class="btn" data-number>4</button>
+				<button class="btn" data-number>5</button>
+				<button class="btn" data-number>6</button>
+				<button class="btn" data-operator>×</button>
 
-<body>
-    <div class="container">
-        <div class="calculator-container">
-            <div class="result-box">
-                <div id="current-calc">0</div>
-                <div id="final-calc">0</div>
-            </div>
-            <div id="clear" data-type="expression" class="btn">AC</div>
-            <div id="backspace" data-type="expression" class="btn">bs</div>
-            <div id="percentage" data-type="expression" class="btn">%</div>
-            <div id="divide" data-type="expression" class="btn btn-circle">/</div>
+				<button class="btn" data-number>1</button>
+				<button class="btn" data-number>2</button>
+				<button class="btn" data-number>3</button>
+				<button class="btn" data-operator>−</button>
 
-            <div id="seven" data-type="number" class="btn">7</div>
-            <div id="eight" data-type="number" class="btn">8</div>
-            <div id="nine" data-type="number" class="btn">9</div>
-            <div id="multiply" data-type="expression" class="btn btn-circle">X</div>
-
-            <div id="four" data-type="number" class="btn">4</div>
-            <div id="five" data-type="number" class="btn">5</div>
-            <div id="six" data-type="number" class="btn">6</div>
-            <div id="subtract" data-type="expression" class="btn btn-circle">-</div>
-
-            <div id="one" data-type="number" class="btn">1</div>
-            <div id="two" data-type="number" class="btn">2</div>
-            <div id="three" data-type="number" class="btn">3</div>
-            <div id="add" data-type="expression" class="btn btn-circle">+</div>
-
-            <div id="enlarge" data-type="number" class="btn">L</div>
-            <div id="zero" data-type="number" class="btn">0</div>
-            <div id="dot" data-type="number" class="btn">.</div>
-            <div id="result" data-type="expression" class="btn btn-circle">=</div>
-
-        </div>
-
-    </div>
-
-  <script src="scripts.js"></script>
-</body>
+				<button class="btn" data-point>.</button>
+				<button class="btn" data-number>0</button>
+				<button class="btn" data-equals>=</button>
+				<button class="btn" data-operator>+</button>
+			</div>
+		</div>
+		<div class="title-box">
+			<h1>CALCULATOR</h1>
+			<h2>by: Nick de Groot</h2>
+		</div>
+	</body>
 </html>
